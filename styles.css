@@ -1,0 +1,74 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "menu main"
+        "menu sidebar"
+        "footer footer";
+    grid-template-rows: 80px 1fr 1fr 80px;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+}
+
+/* Хедер */
+.header {
+    grid-area: header;
+    background: #add8e6;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Меню */
+.menu {
+    grid-area: menu;
+    background: #d8efd8;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Основний блок */
+.main {
+    grid-area: main;
+    background: #ffffff;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.main img {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Бічна панель */
+.sidebar {
+    grid-area: sidebar;
+    background: #ffe4c4;
+    padding: 10px;
+}
+
+/* Футер */
+.footer {
+    grid-area: footer;
+    background: #add8e6;
+    text-align: center;
+    padding: 10px;
+}
